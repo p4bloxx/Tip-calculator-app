@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-html-csssass-js-I6_CW9gxoS](https://www.frontendmentor.io/solutions/tip-calculator-app-html-csssass-js-I6_CW9gxoS)
+- Live Site URL: [https://p4bloxx.github.io/Tip-calculator-app/](https://p4bloxx.github.io/Tip-calculator-app/)
 
 ## My process
 
@@ -57,7 +57,7 @@ Users should be able to:
 
 Hello everyone ;) this challenge was fun and helped me with my constant training in Javascript;
 
-I ran into some difficulties along the way of course, and I wrote two versions of code, both of which actually worked, but the first one was longer and contained some not-so-necessary code, so I've trimmed it all down and hope I've found a fairly coherent solution is useful.
+I ran into some difficulties along the way of course, and I wrote two versions of code(JS), both of which actually worked, but the first one was longer and contained some not-so-necessary code, so I've trimmed it all down and hope I've found a fairly coherent solution is useful.
 
 ### Continued development
 
