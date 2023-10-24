@@ -1,0 +1,214 @@
+//Tipography
+$fs-13: 0.8125rem;
+$fs-16: 1rem;
+$fs-20: 1.25rem;
+$fs-24: 1.5rem;
+$fs-32: 2rem;
+$fs-48: 3rem;
+
+//Colors
+$white: rgba(255, 255, 255, 1);
+$very-light-graish: rgba(243, 249, 250, 1);
+$graish-green1: rgba(84, 120, 120, 1);
+$graish-green2: rgba(94, 122, 125, 1);
+$graish-green3: rgba(127, 157, 159, 1);
+$mid-green: rgba(13, 104, 109, 1);
+$dark-green: rgba(0, 71, 75, 1);
+$dark-green-opacity: rgba(0, 71, 75, 0.35);
+$accent-green: rgba(38, 194, 174, 1);
+$very-light-green: rgba(159, 232, 223, 1);
+$error: rgba(225, 116, 87, 1);
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.1;
+  font-family:'Space Mono', monospace;
+  font-weight: 700;
+  background-color: rgb(197, 228, 231);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  color: initial;
+  background: transparent;
+}
+
+span{
+  display: inline-block;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+//Composition
+.grid-flow{
+  display: grid;
+  gap: $fs-32;
+}
+
+.flex-row-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-center{
+  display: grid;
+  place-items: center;
+}
+
+//Utility
+.b-radius1{
+  border-radius: 5px;
+}
+
+.b-radius2{
+  border-radius: 15px;
+}
+
+.b-radius3{
+  border-radius: 25px;
+}
+
+.padding-8{
+  padding: 8px;
+}
+
+.padding-16{
+  padding: 16px;
+}
+
+.padding-24{
+  padding: $fs-24;
+}
+
+.padding-32{
+  padding: $fs-32;
+}
+
+.padding-40{
+  padding: 2.5rem;
+}
+
+.clr-white{
+  color: $white;
+}
+
+.bg-white{
+  background-color: $white;
+}
+
+.bg-v-light-graish{
+  background-color: $very-light-graish;
+}
+
+.clr-dark-green{
+  color: $dark-green;
+}
+
+.bg-dark-green{
+  background-color: $dark-green;
+}
+
+.bg-v-light-green{
+  background-color: $very-light-green;
+}
+
+.clr-acc{
+  color: $accent-green;
+}
+
+.bg-acc{
+  background-color: $accent-green;
+}
+
+.clr-graish-green2{
+  color: $graish-green2;
+}
+
+.clr-graish-green3{
+  color: $graish-green3;
+}
+
+.bg-mid-green{
+  background-color: $mid-green;
+}
+
+.clr-red{
+  color: $error;
+}
+
+.box-shadow{
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+}
+
+.fs-16{
+  font-size: $fs-16;
+}
+
+.fs-24{
+  font-size: $fs-24;
+}

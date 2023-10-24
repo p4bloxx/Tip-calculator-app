@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/variables.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <script src="JS/script.js" defer></script>
+</head>
+<body class="grid-center">
+  <img src="ASSETS/images/logo.svg" class="logo" alt="logotype of calculator tip app - SPLITTER">
+  <div class="calculator-box | grid-flow | bg-white b-radius3 padding-32 box-shadow">
+    <div class="operation-side | grid-flow">
+      <div class="bill-amount">
+        <label class="clr-graish-green2 fs-16" for="bill">Bill</label>
+        <span data-type="err" class="err | clr-red">Can’t be zero</span>
+        <input data-type="bill" type="text" name="" id="bill" placeholder="0" class="input | b-radius1 bg-v-light-graish padding-8 fs-24" autocomplete="off">
+        <img src="ASSETS/images/icon-dollar.svg" alt="" class="icon">
+      </div>
+      <div class="tip boxes">
+        <span class="label-tip | clr-graish-green2 fs-16">Select Tip %</span>
+        <div class="tip-cards">
+          <button value="5" data-type="tip" class="card | b-radius1 bg-dark-green clr-white fs-24 grid-center">5%</button>
+          <button value="10" data-type="tip" class="card | b-radius1 bg-dark-green clr-white fs-24 grid-center">10%</button>
+          <button value="15" data-type="tip" class="card | b-radius1 bg-dark-green clr-white fs-24 grid-center">15%</button>
+          <button value="20" data-type="tip" class="card | b-radius1 bg-dark-green clr-white fs-24 grid-center">25%</button>
+          <button value="25" data-type="tip" class="card | b-radius1 bg-dark-green clr-white fs-24 grid-center">50%</button>
+          <input data-type="custom" type="text" id="custom" class="card | b-radius1 bg-v-light-graish fs-24 grid-center clr-dark-green" placeholder="Custom" maxlength="2" autocomplete="off">
+        </div>
+      </div>
+      <div class="people-amount">
+        <label class="clr-graish-green2 fs-16" for="people">Number of People</label>
+        <span data-type="err" class="err | clr-red">Can’t be zero</span>
+        <input data-type="people" type="text" id="people" placeholder="0" class="input | b-radius1 bg-v-light-graish padding-8 fs-24" autocomplete="off">
+        <img src="ASSETS/images/icon-person.svg" alt="" class="icon">
+      </div>
+    </div>
+
+    <div class="result-side | b-radius2 bg-dark-green padding-24">
+      <div class="tip-person | flex-row-between">
+        <div class="tip-text">
+          <p class="clr-white fs-16">Tip Amount</p>
+          <p class="person | clr-graish-green3">/ person</p>
+        </div>
+        <span data-type="tip-total" class="tip-total | clr-acc">$0.00</span>
+      </div>
+      <div class="total-person | flex-row-between">
+        <div class="total-text">
+          <p class="clr-white fs-16">Total</p>
+          <p class="person | clr-graish-green3">/ person</p>
+        </div>
+        <span data-type="total" class="total | clr-acc">$0.00</span>
+      </div>
+      <button data-type="submit" class="button | b-radius1 bg-acc clr-dark-green | disabled">RESET</button>
+    </div>
+  </div>
+</body>
+</html>
